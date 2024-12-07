@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adwokat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="app">
+      <section id="header">
+        <h1 class="left-line">Ciasto adwokat <br />bez pieczenia!</h1>
+      </section>
+
+      <section id="content">
+        <div id="date-time"></div>
+        <div id="image-wrapper">
+          <img
+            id="adwokatImage"
+            src="https://staticsmaker.iplsc.com/smaker_production_2024_03_22/4f867a8323640895424f82cf624c4bc0-recipe_main.jpg"
+            alt="Ciasto Adwokat"
+          />
+        </div>
+
+        <div class="image-changer">
+          <label>
+            <input
+              type="radio"
+              name="filter"
+              value="normal"
+              checked
+              onchange="changeFilter('normal')"
+            />
+            Normalny
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="filter"
+              value="sepia"
+              onchange="changeFilter('sepia')"
+            />
+            Sepia
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="filter"
+              value="grayscale"
+              onchange="changeFilter('grayscale')"
+            />
+            Czarno-biały
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="filter"
+              value="invert"
+              onchange="changeFilter('invert')"
+            />
+            Negatyw
+          </label>
+        </div>
+
+        <label>
+          <input type="checkbox" id="frame-checkbox" />
+          Dodaj ramke
+        </label>
+
+        <div class="tags">
+          <p>Wielkanoc</p>
+          <p>Impreza</p>
+          <p>Kremy</p>
+          <p>Nabiał</p>
+          <p>Ciasto</p>
+        </div>
+
+        <div class="description">
+          <p>
+            Jeśli mamy ajerkoniak w lodówce zróbmy wyśmienite ciasto na
+            herbatnikach, z kremem budyniowym wzbogaconym o ten likier. Ciasto
+            jest proste i nie wymaga pieczenia, a smakuje rewelacyjnie. My
+            robimy często ajerkoniak, można powiedzieć, że jest to nasza
+            wielkanocna tradycja. Potem wykorzystujemy go do różnych
+            wypieków-tortów, babek, mazurków, ale „adwokat” zawsze cieszy się
+            największym powodzeniem wśród gości!
+          </p>
+
+          <a
+            id="show-more"
+            href="https://smaker.pl/przepisy-ciasta/przepis-ciasto-adwokat-bez-pieczenia,2005654,walek.html"
+            >- - Zobacz więcej!</a
+          >
+        </div>
+
+        <button id="btn-recept">przejdz do przepisu</button>
+      </section>
+
+      <section id="footer">
+        <h2>Adwokat</h2>
+        <p>Jakub Knapik &#x2022; Strona Adwokat &copy; 2024</p>
+      </section>
+    </section>
+    <script src="adwokat-script.js"></script>
+  </body>
+</html>
