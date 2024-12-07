@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (timeSpent >= 10) {
           clearInterval(timer); 
-          window.location.href = '/adwokat.html'; 
+          window.location.href = '/index.html'; 
         }
       }, 1000); 
     }
